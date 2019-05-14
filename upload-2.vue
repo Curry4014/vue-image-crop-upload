@@ -407,7 +407,7 @@ export default {
 		off() {
 			setTimeout(()=> {
 				this.$emit('input', false);
-				if(this.step == 3 && this.loading == 2){
+				if(this.step == 3 && this.loading == 2 || this.step == 2){
 					this.setStep(1);
 				}
 			}, 200);
